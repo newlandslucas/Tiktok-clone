@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942D326F2B03E904007770C9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942D326E2B03E904007770C9 /* ExploreView.swift */; };
+		942D32712B03E917007770C9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942D32702B03E917007770C9 /* UserCell.swift */; };
 		94DC59B52AFE9AE800F78E6E /* tiktokCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DC59B42AFE9AE800F78E6E /* tiktokCloneApp.swift */; };
 		94DC59B72AFE9AE800F78E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DC59B62AFE9AE800F78E6E /* ContentView.swift */; };
 		94DC59B92AFE9AEC00F78E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94DC59B82AFE9AEC00F78E6E /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942D326E2B03E904007770C9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		942D32702B03E917007770C9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		94DC59B12AFE9AE800F78E6E /* tiktokClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiktokClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94DC59B42AFE9AE800F78E6E /* tiktokCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tiktokCloneApp.swift; sourceTree = "<group>"; };
 		94DC59B62AFE9AE800F78E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		94DC59CB2AFE9B8200F78E6E /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				942D326E2B03E904007770C9 /* ExploreView.swift */,
+				942D32702B03E917007770C9 /* UserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 				94DC59D82AFEA33700F78E6E /* feedCell.swift in Sources */,
 				94DC59B72AFE9AE800F78E6E /* ContentView.swift in Sources */,
 				94DC59B52AFE9AE800F78E6E /* tiktokCloneApp.swift in Sources */,
+				942D326F2B03E904007770C9 /* ExploreView.swift in Sources */,
 				94DC59D42AFE9E6C00F78E6E /* MainTabView.swift in Sources */,
+				942D32712B03E917007770C9 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
