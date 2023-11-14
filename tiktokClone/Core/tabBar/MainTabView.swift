@@ -44,10 +44,10 @@ struct MainTabView: View {
                 .onAppear { selectedTab = 2}
                 .tag(2)
             
-            Text("Inbox")
+            NotificationsView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "heart")
+                        Image(systemName: "message.badge")
                             .environment(\.symbolVariants, selectedTab == 3 ? .fill : .none)
 
                         Text("Inbox")
