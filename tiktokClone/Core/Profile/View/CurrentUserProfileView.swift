@@ -13,6 +13,9 @@ struct CurrentUserProfileView: View {
             ScrollView {
                 VStack(spacing: 2) {
                     
+                    //MARK: profile options upper header
+                    UpperHeaderOptionsView()
+                    
                     //MARK: Profile header
                      ProfileHeaderView()
                     
@@ -21,8 +24,6 @@ struct CurrentUserProfileView: View {
                     
                 }
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.inline)
             .padding(.vertical)
         }
        

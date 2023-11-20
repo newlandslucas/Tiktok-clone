@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct feedCell: View {
-    let post: Int
+    let post: Post
+    var player: AVPlayer
+    
+    init(post: Post, player: AVPlayer) {
+        self.post = post
+        self.player = player
+    }
+    
     var body: some View {
         ZStack {
-            Rectangle()
-            .containerRelativeFrame([.horizontal, .vertical])
-            .overlay {
-                Text("Post \(post)")
-                    .foregroundStyle(.white)
-            }
+            CustomVideoPlayer(player: player)
+                .containerRelativeFrame([.horizontal, .vertical])
             
             VStack {
                 Spacer()
@@ -86,15 +90,19 @@ struct feedCell: View {
                                 .foregroundColor(.white)
                         }
                     }
-
-                }
+                
+            }
                 .padding(.bottom, 85)
             }
             .padding()
+        
+        }
+        .onAppear {
+            player.play()
         }
     }
 }
 
 #Preview {
-    feedCell(post: 2)
+    feedCell(post: Post(id: NSUUID().uuidString, videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"), player: AVPlayer())
 }
