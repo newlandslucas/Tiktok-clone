@@ -13,7 +13,10 @@ class FeedViewModel: ObservableObject {
      let videoUrls = [
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
         "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4"
+        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+        "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
     ]
     
     init() {
@@ -25,6 +28,9 @@ class FeedViewModel: ObservableObject {
             .init(id: NSUUID().uuidString, videoUrl: videoUrls[0]),
             .init(id: NSUUID().uuidString, videoUrl: videoUrls[1]),
             .init(id: NSUUID().uuidString, videoUrl: videoUrls[2]),
+            .init(id: NSUUID().uuidString, videoUrl: videoUrls[3]),
+            .init(id: NSUUID().uuidString, videoUrl: videoUrls[4]),
+            .init(id: NSUUID().uuidString, videoUrl: videoUrls[5]),
         ]
     }
 }
